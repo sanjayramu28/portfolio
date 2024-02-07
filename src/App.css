@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ull li {
+  list-style-type: none;
+  display: flex;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ull a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-size: 25px;
+}
+
+
+.name {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 10px;
+  width: 32%;
+  position: relative;
+  top: 50vh;
+  left: 60vh;
+  font-family: 'Protest Revolution', sans-serif;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: solid 2px;
+  animation:
+    typing 5s steps(40),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+.home {
+  background-image: url('https://img.freepik.com/free-photo/development-with-abstract-background_1134-414.jpg?size=626&ext=jpg&ga=GA1.1.1161449929.1704814302&semt=ais');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* margin: 0px; */
+  width: 100%;
+}
+
+.icns {
+  position: relative;
+  top: 12%;
+  left: 90%;
+  bottom: 1%;
+  width: 20px;
+  font-size: 30px;  
+  /* background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44); */
+}
+
+.icns label {
+  margin-bottom: 20vh;
+}
+
+.icns a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome
+{
+  margin: 30px;
+  border-left: 5px solid lightseagreen;
+  font-family: cursive;
+  word-spacing: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome p
+{
+  margin-left: 20px;
+  font-size: larger;
+  background: -webkit-linear-gradient(left, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
