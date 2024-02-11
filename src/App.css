@@ -62,7 +62,7 @@
   left: 90%;
   bottom: 1%;
   width: 20px;
-  font-size: 30px;  
+  font-size: 30px;
   /* background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44); */
 }
 
@@ -70,24 +70,155 @@
   margin-bottom: 20vh;
 }
 
-.icns a{
+.icns a {
   text-decoration: none;
   color: white;
 }
 
-.welcome
-{
+.welcome {
   margin: 30px;
   border-left: 5px solid lightseagreen;
   font-family: cursive;
   word-spacing: 10px;
 }
-.welcome p
-{
+
+.welcome p {
   margin-left: 20px;
   font-size: larger;
   background: -webkit-linear-gradient(left, #ff6a00, #ee0979);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+.abt {
+  background-image: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=996&t=st=1707315436~exp=1707316036~hmac=b0ec43ed200c99f1d78521bcfdd603551557c1bd8de76f006a284e70bd0e8670');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  color: red;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-family: monospace;
+  text-shadow: 10px 15px 7px;
+  font-weight: bold;
+}
+
+.abt-me {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  margin: auto;
+  width: 90vh;
+  color: black;
+  font-size: 30px;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+}
+
+/* .abt-me1 {
+  /* margin: 40vh; */
+/* justify-content: center;
+  align-items: center; */
+/* }  */
+
+.abts {
+  padding-left: 20vh;
+}
+
+.abts p {
+  font-size: 20px;
+  padding: 10vh;
+}
+
+.abt-img {
+  float: right;
+  width: 50vh;
+  margin: 0vh 12vh 0vh 20vh;
+  display: flex;
+  height: auto;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.abt-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+.abt-cards label {
+  background: -webkit-linear-gradient(left, red, purple, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 4px solid gray;
+  animation-name: border1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  padding: 13vh;
+  border-color: red green blue yellow;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+@keyframes border1 {
+  0% {
+    border-color: red green blue yellow;
+    border: 7px solid;
+  }
+
+  25% {
+    border-color: yellow red green blue;
+  }
+
+  50% {
+    border-color: blue yellow red green;
+  }
+
+  75% {
+    border-color: green blue yellow red;
+    border: 5px solid;
+  }
+
+  100% {
+    border-color: red green blue yellow;
+  }
+}
+
+.discuss {
+  text-align: center;
+  /* ba */
+}
+
+.discuss video {
+  display: flex;
+  position: absolute;
+  top: 179%;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  z-index: -100;
+}
+
+.discuss-para
+{
+  margin-top: 10vh;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  font-family: monospace;
 }
