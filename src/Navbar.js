@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
+import Contact from './Contact';
 
 
 const Navbar = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
               <a href='about me'>About Me!</a>
             </li>
             <li className='col-lg-3'>
-              <a href='contact me'>Contact  Me</a>
+              <a href='contact'>Contact  Me</a>
             </li>
             <li className='col-lg-3'>
               <a href='resume'>Resume</a>
@@ -38,7 +39,7 @@ const Navbar = () => {
             <Route index element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about me" element={<About />} />
-            {/* <Route path="contact" element={<Contact />} /> */}
+            <Route path="contact" element={<Contact />} />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
         </Routes>

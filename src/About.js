@@ -1,4 +1,8 @@
 import React from 'react'
+import Contact from './Contact';
+// import { useHistory } from 'react-router-dom';
+
+
 
 const About = () => {
     let interval=5000;
@@ -53,12 +57,12 @@ const About = () => {
                 </div>
                 <div className='discuss'>
                     <video autoPlay loop muted id='disc'>
-                        <source src='././discussbg.mp4'></source>   
+                        <source src='images/discussbg.mp4'></source>   
                     </video>
                     <div className='discuss-para'>
                         <p>Let's Discuss About Projects</p>
                         <p>If You Want To Contact Me Click Below</p>
-                        <button className='btn m-5  btn-primary'>Contact</button>
+                        <button className='btn m-5  btn-primary' >Contact</button>
                     </div>
                 </div>
                 
