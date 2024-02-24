@@ -1,69 +1,96 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 // import { Form } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 const Contact = () => {
+    //  state = {
+    //     disabled: true
+    // }
 
-    const form=useRef();
 
-    const sendEmail=(e)=>
-    {
+    // handleChange = (e) => {
+    //     if (e.target.value.length > 1) {
+    //         this.setState({ disabled: false });
+    //     }
+    // }
+
+    const [value, setValue] = React.useState("");
+
+    function handleChange(e) {
+        setValue(e.target.value);
+    }
+
+    const notify = () => {
+        toast("Email Sent Sucess", {
+            autoClose: 3000,
+        })
+    }
+
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
         e.preventDefault();
 
 
-        emailjs.sendForm('service_20p83cj','template_gnwloih', form.current,{publicKey:'ugL8RNcg6iHrDJ_Bm'})
-        .then(
-            ()=>{
-                console.log('Sucess');
-            },
-        (error)=>
-        {
-            console.log('Fail',error.text);
-        }
-        );
+        emailjs.sendForm('service_20p83cj', 'template_gnwloih', form.current, { publicKey: 'ugL8RNcg6iHrDJ_Bm' })
+            .then(
+                () => {
+                    console.log('Sucess');
+                },
+                (error) => {
+                    console.log('Fail', error.text);
+                }
+            );
     };
     return (
         <div>
-            <div className='contact-bg'>
-                <p>Contact Me</p>
-            </div>
             <div className='contact-form'>
                 <h4 className='m-4 text-center p-4'>
                     Get In Touch
                 </h4>
                 <div className='row bg-light p-5'>
-                    <form ref={form} className='col-6 contact-forma' onSubmit={sendEmail}>
-                        <textarea rows={8} cols={90} placeholder='Enter The Message' className='ms-4' required name='message'></textarea>
-                        {/* <br /> */}
-                        <input type='text'  required name='user_name'/>
-                        <span>Your Name</span>
-                        <input type='email' required name='user_email'/>
-                        <span>Your Mail</span><br />
-                        <input type='text' required  name='user_subject'/>
-                        <span>Subject</span>
-                        <br />
-                        <input type='submit' className='btn btn-info text-center ' value='Send message' style={{width:'20vh'}} />
+                    <form ref={form} className='col-6 ' onSubmit={sendEmail}>
+                        <div className='contact-forma'>
+                            <textarea rows={8} cols={90} className='ms-4 ' placeholder='Your Message' required name='message' onChange={handleChange}></textarea>
+                            <label className='contact-formb'>Message</label>
+                        </div>
+                        <div className='contact-forma'>
+                            <input type='text' required name='user_name' onChange={handleChange}/>
+                            <label>Your Name</label>
+                        </div>
+                        <div className='contact-forma'>
+                            <input type='email' required name='user_email' onChange={handleChange}/>
+                            <label>Your Mail</label><br />
+                        </div>
+                        <div className='contact-forma'>
+                            <input type='text' required name='user_subject' onChange={handleChange}/>
+                            <label>Subject</label>
+                            <br />
+                        </div>
+                        <input disabled={!value} type='submit' className='btn btn-info text-center ' value='Send message' onClick={() =>  notify() } style={{ width: '20vh' }} />
+                        <ToastContainer />
                     </form>
-                    <div className='col-3' style={{marginLeft:'30vh'}}>
+                    <div className='col-3' style={{ marginLeft: '30vh' }}>
                         <div className='contact-loc'>
                             <img src='images/home.png' alt='home'></img>
                             <label className='ms-3 '>Tiruchengode</label>
-                            <p  className='text-secondary'>Namakkal</p>
-                            {/* <br /> */}
+                            <p className='text-secondary'>Namakkal</p>
                         </div>
                         <div className='contact-loc'>
                             <img src='images/phone.png'></img>
                             <label className='ms-3  '>+91-9087661022</label>
-                            {/* <br /> */}
                             <p className='text-secondary'>Monday-Friday</p>
-                            {/* <br /> */}
                         </div>
                         <div className='contact-loc'>
                             <img src='images/email.png'></img>
                             <label className='align-middle ms-3'>sanjayrajamani2003@gmail.com</label>
-                            <p className='text-secondary'>Send Me You Message</p>
-                            {/* <br /> */}
+                            <p className='text-secondary'>Send Me Your Message</p>
                         </div>
                     </div>
                 </div>

@@ -242,28 +242,49 @@
 
 .contact-form input
 {
-  padding: 5px;
+  padding: 10px;
   margin: 20px;
-  width: 39vh;
+  width: 50%;
 }
 
-.contact-forma span
+
+.contact-msg
+{
+  position: absolute;
+  right: 10px;
+  background-color: aliceblue;
+  width: 100vh;
+  /* display: none; */
+}
+
+.active
+{
+  display: block;
+}
+
+.contact-forma label
 {
   position: relative;
   right: 40vh;
-  /* left: 10vh; */
+  transition: 0.5s;
+  pointer-events: none;
 }
 
-.contact-forma input:valid~span,
-.contact-forma input:focus~span
+
+.contact-form input:valid ~ label,
+.contact-form input:focus ~ label
 {
-  background-color: antiquewhite;
+  transform: translateX(-40px) translateY(-20px);
+  background-color: #f8f9fa;
+  position: relative;
+  padding: 1px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  
 }
 
 .contact-loc img
 {
-  /* float: none; */
-  /* margin-top: -1vh; */
   padding: 10px ;
   width: 8vh;
   margin: 40px 0px 10px 6px;
