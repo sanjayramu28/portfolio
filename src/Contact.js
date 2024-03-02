@@ -8,16 +8,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contact = () => {
-    //  state = {
-    //     disabled: true
-    // }
-
-
-    // handleChange = (e) => {
-    //     if (e.target.value.length > 1) {
-    //         this.setState({ disabled: false });
-    //     }
-    // }
 
     const [value, setValue] = React.useState("");
 
@@ -55,7 +45,7 @@ const Contact = () => {
                     Get In Touch
                 </h4>
                 <div className='row bg-light p-5'>
-                    <form ref={form} className='col-6 ' onSubmit={sendEmail}>
+                    <form ref={form} className='col-5 ' onSubmit={sendEmail}>
                         <div className='contact-forma'>
                             <textarea rows={8} cols={90} className='ms-4 ' placeholder='Your Message' required name='message' onChange={handleChange}></textarea>
                             <label className='contact-formb'>Message</label>
@@ -76,7 +66,7 @@ const Contact = () => {
                         <input disabled={!value} type='submit' className='btn btn-info text-center ' value='Send message' onClick={() =>  notify() } style={{ width: '20vh' }} />
                         <ToastContainer />
                     </form>
-                    <div className='col-3' style={{ marginLeft: '30vh' }}>
+                    <div className='col-4' style={{ marginLeft: '30vh' }}>
                         <div className='contact-loc'>
                             <img src='images/home.png' alt='home'></img>
                             <label className='ms-3 '>Tiruchengode</label>
@@ -89,7 +79,7 @@ const Contact = () => {
                         </div>
                         <div className='contact-loc'>
                             <img src='images/email.png'></img>
-                            <label className='align-middle ms-3'>sanjayrajamani2003@gmail.com</label>
+                            <label className=' ms-3'>sanjayrajamani2003@gmail.com</label>
                             <p className='text-secondary'>Send Me Your Message</p>
                         </div>
                     </div>

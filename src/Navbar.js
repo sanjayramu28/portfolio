@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -11,8 +10,10 @@ const Navbar = () => {
   return (
     <div className='container-fluid'>
       <div className='row'>
-        <div className='col-lg-6'>
-          <p>Sanjay</p>
+        <div className='col-lg-6 i' >
+          <video  autoPlay loop muted >
+            <source src='././logo.mp4' ></source>
+          </video>
         </div>
         <div className='col-lg-6'>
           <ul className='ull row'>

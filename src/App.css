@@ -213,6 +213,13 @@
   z-index: -100;
 }
 
+.i video
+{
+  width: 30vh;
+  height: 6vh;
+  object-fit: cover;
+}
+
 .discuss-para
 {
   margin-top: 10vh;
@@ -247,15 +254,15 @@
   width: 50%;
 }
 
-
+/* 
 .contact-msg
 {
-  position: absolute;
-  right: 10px;
-  background-color: aliceblue;
-  width: 100vh;
+  /* position: absolute; */
+  /* right: 10px; */
+  /* background-color: aliceblue; */
+  /* width: 100vh; */
   /* display: none; */
-}
+/* }  */
 
 .active
 {
@@ -265,7 +272,7 @@
 .contact-forma label
 {
   position: relative;
-  right: 40vh;
+  right: 35vh;
   transition: 0.5s;
   pointer-events: none;
 }
@@ -274,7 +281,7 @@
 .contact-form input:valid ~ label,
 .contact-form input:focus ~ label
 {
-  transform: translateX(-40px) translateY(-20px);
+  transform: translateX(-5px) translateY(-20px);
   background-color: #f8f9fa;
   position: relative;
   padding: 1px;
@@ -304,4 +311,112 @@
 {
   margin-top: -6vh;
   margin-left: 12vh;
+}
+
+.left{
+  float: left;
+  height: auto;
+  background-color:  #bfbfbf;
+  padding: 30px;
+  margin: 12vh;
+}
+
+.row h2
+{
+  
+  border-bottom: 3px solid black ;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-family: "Anta", sans-serif;
+  
+}
+
+.res-links 
+{
+  text-decoration: none;
+  color: black;
+  margin: 40px 0px 60px 0px;
+}
+
+
+.res-links a
+{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.right{
+  float: right;
+  margin-top: 15vh;
+  font-family: "Madimi One", sans-serif;
+  font-size: 20px;
+}
+
+.res-links img
+{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 30px;
+}
+
+/* .res-education label
+{
+  font-family: "Madimi One", sans-serif;
+} */
+
+.fonta {
+  
+  /* word-spacing: 1000px; */
+  margin-right: 10px;
+  /* margin-bottom: 10px; */
+}
+
+@media  screen and (max-width: 1415px) {
+  .name {
+    top: 50vh;
+    left: 40vh;
+    width: 50%;
+  }
+
+  .discuss video {
+    top: 170%;
+  }
+
+  
+  .abts {
+    padding-left: 10vh;
+  }
+
+  .abt-img {
+    width: 30vh;
+    margin: 0vh 12vh 0vh 20vh;
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+}
+@media  screen and (max-width: 1307px) {
+  .discuss video {
+    top: 180%;
+  }
+
+}
+
+@media  screen and (max-width: 900px) {
+  .name {
+    top: 50vh;
+    left: 10vh;
+    width: 60%;
+  }
+
+  .welcome p
+  {
+    margin-left: 0px;
+    margin: 30px;
+  }
 }
