@@ -7,25 +7,12 @@ import { faCircle as fat } from '@fortawesome/free-regular-svg-icons';
 
 
 const Resume = () => {
-  const styles = StyleSheet.create({
-    page: {
-      flexDirection: 'row',
-      backgroundColor: '#E4E4E4'
-    },
-    section: {
-      margin: 10,
-      padding: 10,
-      flexGrow: 1
-    }
-  });
-
   return (
     <>
-      <h1 className='text-center p-3'>Resume</h1>
+      <h1 className='text-center p-5 res-shadow'>Resume</h1>
       <div className='row'>
         <div className='col-lg-3 left '>
-          <p className='text-dark fs-1'>Sanjay<span className='text-info'>&nbsp;Ram</span></p>
-          {/* <p>165/15c,T.salapalayam,<br />Kumaramangalam,Tiruchengode,<br />Namakkal,637205</p> */}
+          <p className='text-dark fs-3 tshadow'>Sanjay<span className='text-white'>&nbsp;Ram</span></p>
           <div className='res-details'>
             <h2>Details</h2>
             <h5>Phone</h5>
@@ -39,46 +26,56 @@ const Resume = () => {
           <div className='res-skills'>
             <h2>Skills</h2>
             <h4 className='mt-4'>Bootstrap</h4>
-            <FontAwesomeIcon icon={faCircle} className='fonta' />
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={fat} className='fonta'/>
+            <div className='bar' style={{height:'10px'}}>
+              <div className='barb' style={{width:'80%',animation:'Boot-animation 3s ease'}}>
+                <span className='ski-perc'>80%</span>
+              </div>
+            </div>
 
             <h4 className='mt-4'>React</h4>
-            <FontAwesomeIcon icon={faCircle} className='fonta' />
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={fat} className='fonta'/>
+            <div className='bar' style={{height:'10px'}}>
+              <div className='barb' style={{width:'60%',animation:'React-animation 3s'}}>
+                 <span className='ski-perc'>60%</span>
+              </div>
+            </div>
+
+            
 
             <h4 className='mt-4'>Html & CSS</h4>
-            <FontAwesomeIcon icon={faCircle} className='fonta' />
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={fat} className='fonta'/>
+            <div className='bar' style={{height:'10px'}}>
+              <div className='barb' style={{width:'90%',animation:'Html-animation 3s'}}>
+                 <span className='ski-perc'>90%</span>
+              </div>
+            </div>
 
             <h4 className='mt-4'>JavaScript</h4>
-            <FontAwesomeIcon icon={faCircle} className='fonta' />
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={fat} className='fonta'/>
+            <div className='bar' style={{height:'10px'}} >
+              <div className='barb' style={{width:'70%',animation:'Js-animation 3s'}}>
+                 <span className='ski-perc'>70%</span>
+              </div>
+            </div>
+
+            <h4 className='mt-4'>Java</h4>
+            <div className='bar' style={{height:'10px'}}>
+              <div className='barb' style={{width:'60%', animation:'Java-animation 3s '}}>
+                 <span className='ski-perc'>60%</span>
+              </div>
+            </div>
+
 
             <h4 className='mt-4'>Active Listening</h4>
-            <FontAwesomeIcon icon={faCircle} className='fonta' />
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={faCircle} className='fonta'/>
-            <FontAwesomeIcon icon={fat} className='fonta'/>
+            <div className='bar' style={{height:'10px'}}>
+              <div className='barb' style={{width:'80%',animation:'listen-animation 3s'}}>
+                 <span className='ski-perc'>80%</span>
+              </div>
+            </div>
           </div>
           <div className='res-links'>
-            
             <a href='https://github.com/sanjayramu28'><img src='https://cdn-icons-png.flaticon.com/128/270/270798.png' />Git Hub</a>
             <br />
-            
-            <a href='www.linkedin.com/in/ sanjay-ram-28dec2003'><img src='https://cdn-icons-png.flaticon.com/128/3992/3992606.png' />LinkedIn</a>
+            <hr />
+            <a href='https://www.linkedin.com/in/ sanjay-ram-28dec2003'><img src='https://cdn-icons-png.flaticon.com/128/3992/3992606.png' />LinkedIn</a>
+            <hr />
           </div>
         </div>
         <div className='col-lg-7 right'>
@@ -111,16 +108,16 @@ const Resume = () => {
 
           <div className='res-courses'>
             <h2>Courses</h2>
-            <h4>React Js </h4>
-            <p>Internshala</p> 
+            <label className='fs-3'>React Js </label>
+            <p className='ms-5'>Internshala</p>
           </div>
 
           <div className='res-intern'>
             <h2>
               Internships
             </h2>
-            <label>Web Developer </label>
-            <p>Infinity Hub-Erode</p>
+            <label className='fs-3'>Web Developer </label>
+            <p className='ms-5'>Infinity Hub-Erode</p>
           </div>
         </div>
       </div>

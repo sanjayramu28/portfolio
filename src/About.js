@@ -37,9 +37,7 @@ const About = () => {
                              &nbsp;&nbsp;Hi , I am Sanjay .I Have Completed My Studies at K.S.Rangasamy College Of Technology.
                         </p>
                     </div>
-                    
-                        <img src='https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?w=740&t=st=1707317412~exp=1707318012~hmac=ba23a5b85de8d7dc1c31317b41a2896cf1fa14201a217974305ccda119cb0f05' className='abt-img col-lg-6' />
-                   
+                        <img src='https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?w=740&t=st=1707317412~exp=1707318012~hmac=ba23a5b85de8d7dc1c31317b41a2896cf1fa14201a217974305ccda119cb0f05' className='abt-img col-lg-6' />                   
                 </div>
                 <br />
                 <div className='abt-cards'> 
@@ -64,6 +62,7 @@ const About = () => {
                         <p>If You Want To Contact Me Click Below</p>
                         <button className='btn m-5  btn-primary' >Contact</button>
                     </div>
+                    
                 </div>
                 
         </div>

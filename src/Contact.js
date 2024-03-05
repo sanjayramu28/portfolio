@@ -45,7 +45,7 @@ const Contact = () => {
                     Get In Touch
                 </h4>
                 <div className='row bg-light p-5'>
-                    <form ref={form} className='col-5 ' onSubmit={sendEmail}>
+                    <form ref={form} className='col-lg-5 ' onSubmit={sendEmail}>
                         <div className='contact-forma'>
                             <textarea rows={8} cols={90} className='ms-4 ' placeholder='Your Message' required name='message' onChange={handleChange}></textarea>
                             <label className='contact-formb'>Message</label>
@@ -66,7 +66,7 @@ const Contact = () => {
                         <input disabled={!value} type='submit' className='btn btn-info text-center ' value='Send message' onClick={() =>  notify() } style={{ width: '20vh' }} />
                         <ToastContainer />
                     </form>
-                    <div className='col-4' style={{ marginLeft: '30vh' }}>
+                    <div className='col-4 contact-info' style={{ marginLeft: '30vh' }}>
                         <div className='contact-loc'>
                             <img src='images/home.png' alt='home'></img>
                             <label className='ms-3 '>Tiruchengode</label>

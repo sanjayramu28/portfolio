@@ -1,3 +1,56 @@
+.sidebar {
+ /* background-color: white; */
+  width: 60vh;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  display: block;
+  align-items: flex-end;
+  justify-content: flex-start;
+  transition: 3s;
+  display: none;
+    -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.sidebar p:nth-child(1) {
+  float: right;
+  margin: 10px 30px 0px 10px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.ulls {
+  display: block;
+  list-style-type: none;
+ 
+}
+
+.ulls a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-size: 25px;
+}
+
+.ulls li {
+  margin-bottom: 20px;
+  /* margin-top: 40px; */
+}
+
+.i img{
+  width: 70px;
+  height: 50px;
+}
+
+.menu1 {
+  display: none;
+  float: right;
+}
+
+
+.row,
 .ul {
   display: flex;
   list-style-type: none;
@@ -6,7 +59,6 @@
 .ull li {
   list-style-type: none;
   display: flex;
-
 }
 
 .ull a {
@@ -18,10 +70,10 @@
 
 
 .name {
-  display: inline-block;
+  display: flex;
   font-size: 30px;
   letter-spacing: 10px;
-  width: 32%;
+  width: 32%;  
   position: relative;
   top: 50vh;
   left: 60vh;
@@ -63,7 +115,6 @@
   bottom: 1%;
   width: 20px;
   font-size: 30px;
-  /* background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44); */
 }
 
 .icns label {
@@ -121,12 +172,6 @@
   font-family: 'Pacifico', cursive;
 }
 
-/* .abt-me1 {
-  /* margin: 40vh; */
-/* justify-content: center;
-  align-items: center; */
-/* }  */
-
 .abts {
   padding-left: 20vh;
 }
@@ -150,6 +195,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
 }
 
 
@@ -159,6 +205,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border: 4px solid gray;
+  height: 40vh;
   animation-name: border1;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -204,7 +251,7 @@
 .discuss video {
   display: flex;
   position: absolute;
-  top: 179%;
+  /* top: 179vh; */
   left: 0%;
   right: 0%;
   width: 100%;
@@ -213,15 +260,13 @@
   z-index: -100;
 }
 
-.i video
-{
+.i video {
   width: 30vh;
   height: 6vh;
   object-fit: cover;
 }
 
-.discuss-para
-{
+.discuss-para {
   margin-top: 10vh;
   color: white;
   font-weight: bold;
@@ -230,8 +275,7 @@
   font-family: monospace;
 }
 
-.contact-bg
-{
+.contact-bg {
   background-image: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=996&t=st=1707315436~exp=1707316036~hmac=b0ec43ed200c99f1d78521bcfdd603551557c1bd8de76f006a284e70bd0e8670');
   background-repeat: no-repeat;
   background-size: cover;
@@ -247,30 +291,28 @@
   font-weight: bold;
 }
 
-.contact-form input
+.contact-formb
 {
-  padding: 10px;
-  margin: 20px;
-  width: 50%;
+  position: relative;
+  /* float: left; */
 }
 
-/* 
-.contact-msg
-{
-  /* position: absolute; */
-  /* right: 10px; */
-  /* background-color: aliceblue; */
-  /* width: 100vh; */
-  /* display: none; */
-/* }  */
+.contact-info{
 
-.active
-{
+}
+
+.contact-form input {
+  padding: 10px;
+  margin: 20px;
+  width: 70%;
+}
+
+
+.active {
   display: block;
 }
 
-.contact-forma label
-{
+.contact-forma label {
   position: relative;
   right: 35vh;
   transition: 0.5s;
@@ -278,83 +320,112 @@
 }
 
 
-.contact-form input:valid ~ label,
-.contact-form input:focus ~ label
-{
+.contact-form input:valid~label,
+.contact-form input:focus~label {
   transform: translateX(-5px) translateY(-20px);
   background-color: #f8f9fa;
   position: relative;
   padding: 1px;
   border-left: 2px solid black;
   border-right: 2px solid black;
-  
 }
 
-.contact-loc img
-{
-  padding: 10px ;
+.contact-loc img {
+  padding: 10px;
   width: 8vh;
   margin: 40px 0px 10px 6px;
   background-color: blueviolet;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 30px;
 }
 
-.contact-loc label
-{
+.contact-loc label {
   text-align: center;
   margin-top: -10px;
   justify-content: center;
 }
 
-.contact-loc p
-{
+.contact-loc p {
   margin-top: -6vh;
   margin-left: 12vh;
 }
 
-.left{
+.left {
   float: left;
   height: auto;
-  background-color:  #bfbfbf;
+  background-color: #bfbfbf;
   padding: 30px;
   margin: 12vh;
 }
 
-.row h2
-{
-  
-  border-bottom: 3px solid black ;
+.row h2 {
+
+  /* border-bottom: 3px solid black ; */
   margin-bottom: 40px;
   margin-top: 20px;
   font-family: "Anta", sans-serif;
-  
+
 }
 
-.res-links 
-{
+
+
+.res-skills .bar,
+.bar1:hover {
+  height: 20px;
+
+}
+
+.row h2::after {
+  content: ' ';
+  position: relative;
+  display: flex;
+  background: linear-gradient(90deg, rgba(214, 213, 226, 1) 0%, rgba(156, 156, 252, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  height: 5px;
+  animation: lines 3s ease-in-out alternate infinite;
+}
+
+
+.res-shadow {
+  box-shadow: 20px 10px 10px 0px lightgray;
+}
+
+.tshadow {
+  text-shadow: 2px 2px red;
+}
+
+@keyframes lines {
+  from {
+    width: 0%;
+  }
+
+
+  to {
+    width: 100%;
+  }
+
+}
+
+.res-links {
   text-decoration: none;
   color: black;
   margin: 40px 0px 60px 0px;
 }
 
 
-.res-links a
-{
+.res-links a {
   text-decoration: none;
   color: black;
   font-size: 30px;
 }
 
-.right{
+.right {
   float: right;
   margin-top: 15vh;
   font-family: "Madimi One", sans-serif;
   font-size: 20px;
 }
 
-.res-links img
-{
+.res-links img {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
@@ -362,19 +433,125 @@
   margin-right: 30px;
 }
 
-/* .res-education label
-{
-  font-family: "Madimi One", sans-serif;
-} */
 
-.fonta {
-  
-  /* word-spacing: 1000px; */
-  margin-right: 10px;
-  /* margin-bottom: 10px; */
+.bar {
+  width: 100%;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 10px;
 }
 
-@media  screen and (max-width: 1415px) {
+.barb {
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  height: 10px;
+  border-radius: 10px;
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+.barb:hover {
+  height: 15px;
+}
+
+@keyframes Boot-animation {
+  from {
+    width: 0%;
+  }
+
+  to {
+
+    width: 80%;
+
+  }
+}
+
+@keyframes React-animation {
+  from {
+    width: 0%;
+  }
+
+  to {
+
+    width: 60%;
+
+  }
+}
+
+@keyframes Html-animation {
+  from {
+    width: 0%;
+  }
+
+  to {
+
+    width: 90%;
+
+  }
+}
+
+@keyframes Js-animation {
+  from {
+    width: 0%;
+  }
+
+  to {
+
+    width: 70%;
+
+  }
+}
+
+@keyframes Java-animation {
+  from {
+    width: 0%;
+  }
+
+  to {
+
+    width: 60%;
+
+  }
+}
+
+@keyframes listen-animation {
+  from {
+    width: 0%;
+  }
+
+  to {
+
+    width: 80%;
+
+  }
+}
+
+.ski-perc {
+  position: relative;
+  top: -5px;
+  margin-left: 95%;
+  font-size: 15px;
+  margin-bottom: -20px;
+  background-color: rgba(148, 187, 233, 1);
+  border-radius: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+
+.fonta {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.text-dark {
+
+  font-family: "BhuTuka Expanded One", serif;
+  font-weight: 1000;
+  /* font-weight: bolder; */
+}
+
+@media screen and (max-width: 1415px) {
   .name {
     top: 50vh;
     left: 40vh;
@@ -385,7 +562,11 @@
     top: 170%;
   }
 
-  
+  .contact-forma label{
+    position: relative;
+    right: 35vh;
+  }
+
   .abts {
     padding-left: 10vh;
   }
@@ -399,23 +580,97 @@
     padding-top: 10px;
   }
 
+  .contact-form input:valid~label,
+.contact-form input:focus~label {
+  transform: translateX(-10vh) translateY(-20px);
 }
-@media  screen and (max-width: 1307px) {
+
+}
+
+@media screen and (max-width: 1307px) {
+  .name {
+    top: 50vh;
+    left: 40vh;
+    width: 45%;
+  }
   .discuss video {
-    top: 180%;
+    top: 180vh;
+  }
+  .menu1{
+    display: none;
   }
 
+  .ull a {
+    font-size: 15px;
+  }
+
+  .discuss video {
+    top: 185vh;
+  }
+
+
 }
 
-@media  screen and (max-width: 900px) {
+@media screen and (max-width:1050px) {
+  .name {
+    top: 45vh;
+    left: 30vh;
+    width: 55%;
+  }
+  .ull a {
+    font-size: 15px;
+  }
+
+  .i img{
+    width: 50px;
+    height: 40px;
+  }
+  .discuss video {
+    top: 210vh;
+  }
+}
+
+@media screen and (max-width:950px){
+  .discuss video {
+    top: 230vh;
+  }
+  
+.abt-img {
+  float: left;
+  width: 50vh;
+  margin: 0vh 12vh 10vh 50vh;
+}
+
+.discuss video {
+  top: 253vh;
+}
+}
+
+@media screen and (max-width:800px) {
   .name {
     top: 50vh;
     left: 10vh;
+    width: 10%;
+  }
+
+  .ull {
+    display: none;
+  }
+
+  .menu1 {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .name {
+    /* top: 50vh;
+    left: 10vh; */
     width: 60%;
   }
 
-  .welcome p
-  {
+  .welcome p {
     margin-left: 0px;
     margin: 30px;
   }
