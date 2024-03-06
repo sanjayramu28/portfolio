@@ -51,14 +51,17 @@ const Contact = () => {
                             <label className='contact-formb'>Message</label>
                         </div>
                         <div className='contact-forma'>
+                            <p>Name</p>
                             <input type='text' required name='user_name' onChange={handleChange}/>
                             <label>Your Name</label>
                         </div>
                         <div className='contact-forma'>
+                            <p>E-mail</p>
                             <input type='email' required name='user_email' onChange={handleChange}/>
                             <label>Your Mail</label><br />
                         </div>
                         <div className='contact-forma'>
+                            <p>Subject</p>
                             <input type='text' required name='user_subject' onChange={handleChange}/>
                             <label>Subject</label>
                             <br />
@@ -79,7 +82,7 @@ const Contact = () => {
                         </div>
                         <div className='contact-loc'>
                             <img src='images/email.png'></img>
-                            <label className=' ms-3'>sanjayrajamani2003@gmail.com</label>
+                            <label >sanjayrajamani2003@gmail.com</label>
                             <p className='text-secondary'>Send Me Your Message</p>
                         </div>
                     </div>

@@ -42,16 +42,16 @@ const About = () => {
                 <br />
                 <div className='abt-cards'> 
                         <label className='col-4'>
-                            <span>
+                            <p className='col-4'>
                             7.95
-                            </span>
-                            <br />
-                       <p> Current CGPA</p>
+                            </p>
+                            {/* <br /> */}
+                       <p className=''> Current CGPA</p>
                         </label>
                         <label className='col-4'>
-                            <span>0</span>
-                            <br/>
-                        Arrears</label>
+                            <p>0</p>
+                            {/* <br/> */}
+                        <p>Arrears</p></label>
                 </div>
                 <div className='discuss'>
                     <video autoPlay loop muted id='disc'>
