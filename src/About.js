@@ -1,24 +1,10 @@
 import React from 'react'
-import Contact from './Contact';
-// import { useHistory } from 'react-router-dom';
-
-
 
 const About = () => {
-    let interval=5000;
-    function number(value)
-    {
-        let start=0;
-        let end={value};
-        let duration=Math.floor(interval/end)
-        let counter=setInterval(function (){
-            start+=1
-            return start;
-        },duration);
-        console.log(value)
-    }
     return (
+        
         <div className='container-fluid'>
+            <title>About Me</title>
                 <div className='abt'>
                     <p>About Me!</p>
                 </div>

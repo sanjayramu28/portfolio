@@ -1,5 +1,4 @@
 .sidebar {
-  /* background-color: white; */
   width: 60%;
   height: 100vh;
   position: fixed;
@@ -364,8 +363,6 @@
 }
 
 .row h2 {
-
-  /* border-bottom: 3px solid black ; */
   margin-bottom: 40px;
   margin-top: 20px;
   font-family: "Anta", sans-serif;
@@ -637,7 +634,6 @@
   }
   .left {
     float: left;
-    /* width: 310%; */
     height: auto;
     background-color: #bfbfbf;
     padding: 30px;
@@ -659,9 +655,6 @@
   .contact-forma input{
     width: 100%;
   }
-  /* .row form{
-    width: 100%;
-  } */
 
   .left {
     margin: 0vh;
@@ -689,12 +682,6 @@
 
 
 }
-/* @media screen and (max-width:769px){
-  .discuss video {
-    top: 290vh;
-    height: 450vh;
-  }
-} */
 
 @media screen and (max-width:800px) {
   .name {

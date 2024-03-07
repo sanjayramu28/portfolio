@@ -1,13 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { LinearTextGradient } from "react-native-text-gradient";
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 
 const Home = () => {
   return (
     <>
+    <title>Home</title>
       <div className='home container-fluid'>
         <p className='name'>Hello This is Sanjay</p>
         <div className='icns' >

@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-// import { Form } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -40,6 +39,7 @@ const Contact = () => {
     };
     return (
         <div>
+            <title>Contact</title>
             <div className='contact-form'>
                 <h4 className='m-4 text-center p-4'>
                     Get In Touch

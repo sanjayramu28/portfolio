@@ -9,6 +9,7 @@ import { faCircle as fat } from '@fortawesome/free-regular-svg-icons';
 const Resume = () => {
   return (
     <>
+    <title>Resume</title>
       <h1 className='text-center p-5 res-shadow'>Resume</h1>
       <div className='row'>
         <div className='col-lg-3 left '>
